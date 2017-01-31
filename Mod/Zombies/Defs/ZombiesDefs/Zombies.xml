@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <Zombies.ZombiesDef>
+        <defName>ZombiesSettings</defName>
+        <InfectChanceOnBite>21</InfectChanceOnBite>
+        <BrainHitChance>0.25</BrainHitChance>
+        <DamageMultiplierOnBrainHit>1.25</DamageMultiplierOnBrainHit>
+        <MinTicksBeforeReanimate>1000</MinTicksBeforeReanimate>
+        <ChancePerTickToReanimate>2.5</ChancePerTickToReanimate>
+        <MinTicksBeforeFirstRaid>75000</MinTicksBeforeFirstRaid>
+        <MinRaidTicksBase>180000</MinRaidTicksBase>
+        <MaxRaidTicksBase>500000</MaxRaidTicksBase>
+    </Zombies.ZombiesDef>
+</Defs>

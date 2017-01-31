@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C079A6AA-A43E-4F83-8C1E-0668A109B082}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zombies</RootNamespace>
+    <AssemblyName>Zombies</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Mod\Zombies\Assemblies</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>../Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HugsLib">
+      <HintPath>..\HugsLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\IncidentWorker_ZombieRaid.cs" />
+    <Compile Include="Source\JobGiver_ZombieFeed.cs" />
+    <Compile Include="Source\ZombieFactory.cs" />
+    <Compile Include="Source\ZombiePawn.cs" />
+    <Compile Include="Source\ZombiesDef.cs" />
+    <Compile Include="Source\ZombiesDefOf.cs" />
+    <Compile Include="Source\ZombiesMod.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mod/Zombies/About\About.xml" />
+    <Content Include="Mod/Zombies/About\license.html" />
+    <Content Include="Mod/Zombies/About\license.txt" />
+    <Content Include="Mod/Zombies/About\Preview.png" />
+    <Content Include="Mod/Zombies/About\PublishedFileId.txt" />
+    <Content Include="Mod/Zombies/Defs\BodyDefs\Bodies_Zombie.xml" />
+    <Content Include="Mod/Zombies/Defs\BodyPartDefs\BodyParts_Zombie.xml" />
+    <Content Include="Mod/Zombies/Defs\BodyPartGroupDefs\BodyPartGroups.xml" />
+    <Content Include="Mod/Zombies/Defs\FactionDefs\Factions.xml" />
+    <Content Include="Mod/Zombies/Defs\HediffDefs\Hediffs_Zombie_Infection.xml" />
+    <Content Include="Mod/Zombies/Defs\IncidentDefs\Incidents_Bad_Misc.xml" />
+    <Content Include="Mod/Zombies/Defs\PawnKindDefs\PawnKinds_Zombies.xml" />
+    <Content Include="Mod/Zombies/Defs\ThingDefs\Races_Zombie.xml" />
+    <Content Include="Mod/Zombies/Defs\ThinkTreeDefs\SubTrees_Misc.xml" />
+    <Content Include="Mod/Zombies/Defs\ThinkTreeDefs\Zombie.xml" />
+    <Content Include="Mod/Zombies/Languages\English\Keyed\English.xml" />
+    <Content Include="Mod/Zombies/Languages\Russian-SK\DefInjected\BodyPartDefs\BodyParts.xml" />
+    <Content Include="Mod/Zombies/Languages\Russian-SK\DefInjected\BodyPartGroupDefs\ZombieBite.xml" />
+    <Content Include="Mod/Zombies/Languages\Russian-SK\DefInjected\FactionDefs\Factions.xml" />
+    <Content Include="Mod/Zombies/Languages\Russian-SK\DefInjected\HediffDefs\Hediffs_Zombie_Infection.xml" />
+    <Content Include="Mod/Zombies/Languages\Russian-SK\DefInjected\IncidentDefs\Incidents_Bad_Misc.xml" />
+    <Content Include="Mod/Zombies/Languages\Russian-SK\DefInjected\MapConditionDefs\MapConditions_Zombies.xml" />
+    <Content Include="Mod/Zombies/Languages\Russian-SK\DefInjected\PawnKindDefs\PawnKinds_Zombies.xml" />
+    <Content Include="Mod/Zombies/Languages\Russian-SK\DefInjected\ThingDefs\Zombie.xml" />
+    <Content Include="Mod/Zombies/Languages\Russian-SK\Keyed\RussianZ.xml" />
+    <Content Include="Mod/Zombies/Languages\Russian-SK\LangIcon.png" />
+    <Content Include="Mod/Zombies/Languages\Russian-SK\LanguageInfo.xml" />
+    <Content Include="Mod\Zombies\Defs\ZombiesDefs\Zombies.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
