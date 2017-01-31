@@ -89,7 +89,7 @@ namespace Zombies
 
                 IncidentParms param = new IncidentParms
                 {
-                    points = 2, target=Find.AnyPlayerHomeMap
+                    target=Find.AnyPlayerHomeMap
 
                 };
                 IncidentDef.Named("ZombieRaid").Worker.TryExecute(param);
