@@ -88,6 +88,7 @@
     <Content Include="Mod/Zombies/Languages\Russian-SK\Keyed\RussianZ.xml" />
     <Content Include="Mod/Zombies/Languages\Russian-SK\LangIcon.png" />
     <Content Include="Mod/Zombies/Languages\Russian-SK\LanguageInfo.xml" />
+    <Content Include="Mod\Zombies\About\Version.xml"/>
     <Content Include="Mod\Zombies\Defs\ZombiesDefs\Zombies.xml" />
     <Content Include="README.md"/>
   </ItemGroup>

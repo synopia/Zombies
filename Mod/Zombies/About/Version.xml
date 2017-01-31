@@ -1,0 +1,8 @@
+<VersionData>
+    <!-- Optional. This specifies the version of your mod for the library. Otherwise, the version of your mod's assembly will be used. -->
+    <overrideVersion>0.16.1</overrideVersion>
+    <!-- Optional. Use this to specify the version of HugsLib you are targeting.
+    See https://github.com/UnlimitedHugs/RimworldHugsLib/releases for the current version of the library.-->
+    <requiredLibraryVersion>2.3.3</requiredLibraryVersion>
+    <gitHubRepository>UnlimitedHugs/RimworldHugsLibChecker</gitHubRepository>
+</VersionData>
