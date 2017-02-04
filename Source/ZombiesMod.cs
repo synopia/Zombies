@@ -21,6 +21,25 @@ namespace Zombies
                     {
                         Infect(dinfo);
                     }
+                } else if (dinfo.Instigator is Pawn)
+                {
+                    var instigator = (Pawn) dinfo.Instigator;
+                    if (instigator.IsColonist && instigator.skills != null)
+                    {
+                        var skillRecord = instigator.skills.GetSkill(SkillDefOf.Melee);
+                        var hitChance = skillRecord.Level * 2;
+                        var damage2 = skillRecord.Level *ZombiesDefOf.ZombiesSettings.DamageMultiplierOnBrainHit;
+                        if (Random.Range(0, 100) < ZombiesDefOf.ZombiesSettings.BrainHitChance + hitChance)
+                        {
+                            dinfo.SetAmount(999);
+                            dinfo.SetForcedHitPart(health.hediffSet.GetBrain());
+                            dinfo.Def.Worker.Apply(dinfo, this);
+                        }
+                        else
+                        {
+                            dinfo.SetAmount((int)(dinfo.Amount*(1+damage2)));
+                        }
+                    }
                 }
             }
 

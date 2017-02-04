@@ -3,8 +3,8 @@
     <Zombies.ZombiesDef>
         <defName>ZombiesSettings</defName>
         <InfectChanceOnBite>21</InfectChanceOnBite>
-        <BrainHitChance>0.25</BrainHitChance>
-        <DamageMultiplierOnBrainHit>1.25</DamageMultiplierOnBrainHit>
+        <BrainHitChance>25</BrainHitChance>
+        <DamageMultiplierOnBrainHit>0.15</DamageMultiplierOnBrainHit>
         <MinTicksBeforeReanimate>1000</MinTicksBeforeReanimate>
         <ChancePerTickToReanimate>2.5</ChancePerTickToReanimate>
         <MinTicksBeforeFirstRaid>75000</MinTicksBeforeFirstRaid>
