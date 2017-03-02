@@ -10,7 +10,7 @@
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canMakeRandomly>false</canMakeRandomly>
 	<hidden>true</hidden>
-	<!--canFlee>false</canFlee-->
+	<autoFlee>false</autoFlee>
     <raidCommonality>0</raidCommonality>
     <canSiege>false</canSiege>
     <canStageAttacks>false</canStageAttacks>
